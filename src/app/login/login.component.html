@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group">
+        <!-- #emailControl="ngModel" -->
+        <input type="email" appEmailvalidator appHover="green" class="form-control" name="name" [(ngModel)]="email" placeholder="provide username" autocomplete="username" />
+        <!-- <div>
+            {{emailControl |json}}
+        </div> -->
+    </div>
+    <div class="form-group">
+        <input type="password" appHover="steelblue" class="form-control" name="name" [(ngModel)]="password" placeholder="provide password" autocomplete="current-password"/>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" (click)="login()">Login</button>
+    </div>
+</form>
